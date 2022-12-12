@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"/>
+
+	    <meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Final_Portfolio</title>
+        <style>
+            :root{
+                --main-color:#325499;
+                --accent-color:#FFE248;
+                --bright-main-color:#C9DDFF;
+                --brignt-accent-color:#FEF5D9;
+                --text-bright-color:#A0A199;
+                --text-ld-color:#34343D;
+                --text-bk-color:#000002;
+                --large-width:1000px;
+                }
+                
+            *{
+			    padding: 0;
+			    margin: 0;
+                font-family: 'Noto Sans KR', sans-serif;
+		        }
+
+            header{
+                width: 1200px;
+                height:72px;
+                margin-left:auto;
+                margin-right:auto;
+                background-color: rgba(255,255,255);
+			    justify-content: space-between;
+			    align-items: center;
+                display:flex;
+                }
+
+            .container{
+                width:1200px;
+                margin-right:auto;
+                margin-left:auto;
+                }
+
+            a{
+			    text-decoration: none;
+			    font-size: 20px;
+			    font-weight: regular;
+		        }
+
+            header img{
+                margin-top:auto;
+                margin-bottom:auto;
+                }
+
+		    header li{
+			    list-style: none;
+		        }
+
+            header .list-menu{
+			    display: flex;
+			    justify-content: space-between;
+			    align-items: center;
+		        }
+
+            header .list-menu li a{
+                color: var(--text-ld-color);
+			    margin: 32px;
+		        }
+
+            header .list-menu li a:hover{
+                color:var(--accent-color);
+                }
+
+            header .list-btn{
+			    display: flex;
+			    justify-content: space-between;
+			    align-items: center;
+		        }
+
+            header .list-btn li a{
+                color:var(--text-bright-color);
+			    margin: 20px;
+		        }
+
+            header .list-btn li a:hover{
+                color:var(--accent-color);
+		        }
+
+
+            footer{
+                display:flex;
+                background-color: var(--main-color);
+                color:var(--accent-color);
+                }
+
+            footer .container{
+                padding:32px 32px;
+                text-align: center;
+                justify-content: center;
+                align-items: center;
+                }
+
+            footer .contact_menu ul{
+                display:flex;
+                text-align: center;
+                justify-content: center;
+                align-items: center;
+                margin-top:12px;
+                }
+
+            footer .contact_menu li{
+                list-style:none;
+                margin:0;
+                padding:0;
+                text-align: center;
+                justify-content: center;
+                align-items: center;
+                }
+
+            footer .contact_menu a{
+                display:block;
+                font-size:27px;
+                margin-right:16px;
+                margin-left:16px;
+                text-decoration:none;
+                color:var(--accent-color);
+                }
+
+            .copy{
+                margin-top:12px;
+                font-size: 12px;
+                text-align: center;
+                font-family: 'Monserrat',sans-serif;
+                }
+
+            .background{
+                display:flex;
+                width:100%;
+                height:578px;
+                background-color: white;
+                }
+
+            .background .imgbox{
+                display:flex;
+                height:578px;
+                margin-left:0px;
+                width:50%;
+                }
+
+            .background .imgbox img{
+                display:flex;
+                justify-content: center;
+                align-items: center;
+                margin:auto auto;
+                margin-right:92px;
+                width:386px;
+                height:386px;
+                }
+
+            .background .whitezone{
+                display:flex;
+                width:50%;
+                height:578px;
+                }
+
+            .background .textbox{
+                display:inline-block;
+                margin-left:92px;
+                margin-top:auto;
+                margin-bottom:auto;
+                }
+
+            .background h1{
+                font-weight: bold;
+                font-size: 32px;
+                color:var(--text-bk-color);
+                }
+
+            .background h1 span{
+                font-size:20px;
+                font-weight:medium;
+                }
+
+            .background p{
+                margin-top:32px;
+                margin-bottom:32px;
+                font-weight:light;
+                font-size:14px;
+                line-height: 1.5;
+                color:var(--text-ld-color);
+                width:386px;
+                text-align: justify;
+                }
+
+            .background a{
+                display: inline-block;
+                margin-top:32px;
+                margin-right:16px;
+                padding: 10px 20px;
+                border-radius: 6px;
+                background-color: var(--main-color);
+                color:var(--brignt-accent-color);
+                font-size: 16px;
+                text-decoration:none;
+                }
+
+            .background a:hover{
+                color:var(--accent-color);
+                }
+
+            .colorbar{
+                display:flex;
+                width:100%;
+                height:64px;
+                background-color:var(--brignt-accent-color);
+                }
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <a href="index.html"><img src="https://pbs.twimg.com/media/FjR9dd4VQAEZ0Oo?format=png&name=medium" alt="" height="36px"></a>
+    
+            <ul class="list-menu">
+               <li><a href="Profile.html">Profile</a></li>
+                <li><a href="Portfolio.html">Portfolio</a></li>
+                <li><a href="Commission.html">Commission</a></li>
+            </ul>
+        
+            <ul class="list-btn">
+                <li><a href="#">LAN</a></li>
+                <li><a href="#">Log In</a></li>
+            </ul>
+        </header>
+        <div class="colorbar"></div>
+        <div class="background">
+            <div class="imgbox">
+                <img src="https://i.ibb.co/KWbMMhV/220720-Cherry-Bomb-2.png">
+            </div>
+            <div class="whitezone">
+                <div class="textbox">
+                    <h1>Cherry Bomb <span> 22.07.20</span></h1>
+                    <p>It is a song of Finn Askew, released in April 2021. The unique and bright feeling of the song was expressed in a form that seemed to come out of the cartoon.
+                    </p>
+                    <a href="Portfolio.html"><i class="fa-solid fa-arrow-left"></i></a>
+                    <a href="https://www.youtube.com/watch?v=BXz8neRuxKo&list=PLOIy0M9KaaeUZm6IG7IW0xJLaFpfIIMVB"><i class="fa-solid fa-circle-play"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="colorbar"></div>
+        <footer>
+            <div class="container">
+                <a href="#"><img src="https://pbs.twimg.com/media/FjR9dd9VEAAWmRc?format=png&name=medium" alt="" height="38px"></a>
+                <nav class="contact_menu">
+                    <ul>
+                        <li><a href="#"><i class="fa-brands fa-instagram" title="instagram"></i></a></li>
+                        <li><a href="#"><i class="fa-regular fa-envelope" title="mail"></i></a></li>
+                        <li><a href="#"><i class="fa-solid fa-comment" title="kakao"></i></a></li>
+                    </ul>
+                </nav>
+                <div class="copy">
+                    ⓒ PYI corp. All rights reserved.
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

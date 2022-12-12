@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"/>
+
+	    <meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Final_Profile</title>
+        <style>
+            :root{
+                --main-color:#325499;
+                --accent-color:#FFE248;
+                --bright-main-color:#C9DDFF;
+                --brignt-accent-color:#FEF5D9;
+                --text-bright-color:#A0A199;
+                --text-ld-color:#34343D;
+                --text-bk-color:#000002;
+                --large-width:1000px;
+                }
+                
+            *{
+			    padding: 0;
+			    margin: 0;
+                font-family: 'Noto Sans KR', sans-serif;
+		        }
+
+            header{
+                width: 1200px;
+                height:72px;
+                margin-left:auto;
+                margin-right:auto;
+                background-color: rgba(255,255,255);
+			    justify-content: space-between;
+			    align-items: center;
+                display:flex;
+                }
+
+            .container{
+                width:1200px;
+                margin-right:auto;
+                margin-left:auto;
+            }
+
+            a{
+			    text-decoration: none;
+			    font-size: 20px;
+			    font-weight: regular;
+		        }
+
+            header img{
+                margin-top:auto;
+                margin-bottom:auto;
+            }
+
+		    header li{
+			    list-style: none;
+		        }
+
+            header .list-menu{
+			    display: flex;
+			    justify-content: space-between;
+			    align-items: center;
+		        }
+
+            header .list-menu li a{
+                color: var(--text-ld-color);
+			    margin: 32px;
+		        }
+
+            header .list-menu li a:hover{
+                color:var(--accent-color);
+                }
+
+            header .list-btn{
+			    display: flex;
+			    justify-content: space-between;
+			    align-items: center;
+		        }
+
+            header .list-btn li a{
+                color:var(--text-bright-color);
+			    margin: 20px;
+		        }
+
+            header .list-btn li a:hover{
+                color:var(--accent-color);
+		        }
+
+            footer{
+                margin-top:0px;
+                margin-bottom:0px;
+                display:flex;
+                background-color: var(--main-color);
+                color:var(--accent-color);
+                }
+
+            footer .container{
+                padding:32px 32px;
+                text-align: center;
+                justify-content: center;
+                align-items: center;
+                }
+
+            footer .contact_menu ul{
+                display:flex;
+                text-align: center;
+                justify-content: center;
+                align-items: center;
+                margin-top:12px;
+                }
+
+            footer .contact_menu li{
+                list-style:none;
+                margin:0;
+                padding:0;
+                text-align: center;
+                justify-content: center;
+                align-items: center;
+                }
+
+            footer .contact_menu a{
+                display:block;
+                font-size:27px;
+                margin-right:16px;
+                margin-left:16px;
+                text-decoration:none;
+                color:var(--accent-color);
+                }
+
+            .copy{
+            margin-top:12px;
+            font-size: 12px;
+            text-align: center;
+            font-family: 'Monserrat',sans-serif;
+                }
+
+            .background{
+                width:100%;
+            height:957px;
+            background-image: url(https://i.ibb.co/GsKr2gn/20210716-152117.jpg);
+            background-position: center;
+            background-size: cover;
+            }
+
+            .background .whitezone{
+                margin-left:50%;
+                width:50%;
+                height:733px;
+                padding-left:112px;
+                padding-top:224px;
+                background-color:rgba(255, 255, 255, 0.8) ;
+            }
+
+            .background .textbox{
+                display:flex;
+            }
+
+            .background h1{
+                font-weight: bold;
+                font-size: 32px;
+                color:var(--text-bk-color);
+            }
+
+            .background p{
+                margin-top:64px;
+                margin-bottom:96px;
+                font-weight:light;
+                font-size:14px;
+                line-height: 1.5;
+                color:var(--text-ld-color);
+                width:386px;
+                text-align: justify;
+            }
+
+            .background h2{
+                margin-top:32px;
+                font-weight:medium;
+                font-size: 16px;
+                color:var(--text-ld-color);
+            }
+
+        </style>
+        </head>
+        <body>
+            <header>
+                <a href="index.html"><img src="https://pbs.twimg.com/media/FjR9dd4VQAEZ0Oo?format=png&name=medium" alt="" height="36px"></a>
+                <ul class="list-menu">
+                    <li><a href="Profile.html">Profile</a></li>
+                    <li><a href="Portfolio.html">Portfolio</a></li>
+                    <li><a href="Commission.html">Commission</a></li>
+                </ul>
+                <ul class="list-btn">
+                    <li><a href="#">LAN</a></li>
+                    <li><a href="#">Log In</a></li>
+                </ul>
+            </header>
+            <div class="background">
+                <div class="whitezone">
+                    <h1>Park Yein</h1>
+                    <p>I am a student who was interested in design. When I entered TUK in 2021, I studied design for the first time. What I can handle now is Adobe Illustrator, Photoshop and Figma. I can also do a little front-end programming like html and p5.js. 
+                        <br><br>I'm still lacking, but I'm learning by making my own works. You can see my work history here.
+                    </p>
+                    <h2>2021.03.02 _ Admission to TUK Media Design Dept. </h2>
+                    <h2>2022.01.09 _ First book cover design commission</h2>
+                    <h2>2022.02.04 _ First Youtube banner design commission</h2>
+                </div>
+                </div>
+            </div>
+            <footer>
+                <div class="container">
+                    <a href="#"><img src="https://pbs.twimg.com/media/FjR9dd9VEAAWmRc?format=png&name=medium" alt="" height="38px"></a>
+                    <nav class="contact_menu">
+                        <ul>
+                            <li><a href="#"><i class="fa-brands fa-instagram" title="instagram"></i></a></li>
+                            <li><a href="#"><i class="fa-regular fa-envelope" title="mail"></i></a></li>
+                            <li><a href="#"><i class="fa-solid fa-comment" title="kakao"></i></a></li>
+                        </ul>
+                    </nav>
+                    <div class="copy">
+                        ⓒ PYI corp. All rights reserved.
+                    </div>
+                </div>
+            </footer>
+        </body>
+        </html>

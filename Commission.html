@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"/>
+	    <meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Final_Portfolio</title>
+        <style>
+            :root{
+                --main-color:#325499;
+                --accent-color:#FFE248;
+                --bright-main-color:#C9DDFF;
+                --brignt-accent-color:#FEF5D9;
+                --text-bright-color:#A0A199;
+                --text-ld-color:#34343D;
+                --text-bk-color:#000002;
+                --large-width:1000px;
+                }
+                
+            *{
+			    padding: 0;
+			    margin: 0;
+                font-family: 'Noto Sans KR', sans-serif;
+		        }
+
+            header{
+                width: 1200px;
+                height:72px;
+                margin-left:auto;
+                margin-right:auto;
+                background-color: rgba(255,255,255);
+			    justify-content: space-between;
+			    align-items: center;
+                display:flex;
+                }
+
+            .container{
+                width:1200px;
+                margin-right:auto;
+                margin-left:auto;
+            }
+
+            a{
+			    text-decoration: none;
+			    font-size: 20px;
+			    font-weight: regular;
+		        }
+
+            header img{
+                margin-top:auto;
+                margin-bottom:auto;
+            }
+
+		    header li{
+			    list-style: none;
+		        }
+
+            header .list-menu{
+			    display: flex;
+			    justify-content: space-between;
+			    align-items: center;
+		        }
+
+            header .list-menu li a{
+                color: var(--text-ld-color);
+			    margin: 32px;
+		        }
+
+            header .list-menu li a:hover{
+                color:var(--accent-color);
+                }
+
+            header .list-btn{
+			    display: flex;
+			    justify-content: space-between;
+			    align-items: center;
+		        }
+
+            header .list-btn li a{
+                color:black;
+			    margin: 20px;
+		        }
+
+            header .list-btn li a:hover{
+                color:var(--accent-color);
+		        }
+
+
+            footer{
+                display:flex;
+                margin-top:172px;
+                background-color: var(--main-color);
+                color:var(--accent-color);
+                }
+
+            footer .container{
+                padding:32px 32px;
+                text-align: center;
+                justify-content: center;
+                align-items: center;
+                }
+
+            footer .contact_menu ul{
+                display:flex;
+                text-align: center;
+                justify-content: center;
+                align-items: center;
+                margin-top:12px;
+            }
+
+            footer .contact_menu li{
+                list-style:none;
+                margin:0;
+                padding:0;
+                text-align: center;
+                justify-content: center;
+                align-items: center;
+            }
+
+            footer .contact_menu a{
+                display:block;
+                font-size:27px;
+                margin-right:16px;
+                margin-left:16px;
+                text-decoration:none;
+                color:var(--accent-color);
+            }
+
+            .copy{
+                margin-top:12px;
+                font-size: 12px;
+                text-align: center;
+                font-family: 'Monserrat',sans-serif;
+                }
+
+            .text-box1{
+                background-color:white;
+                color:var(--text-ld-color);
+                width:100%;
+                }
+
+            .text-box1 .container{
+                display:flex;
+                margin-right:auto;
+                margin-left:auto;
+                margin-top:128px;
+                width:996px;
+                height:384px;
+                }
+
+            .text-box1 .text1{
+                display:inline-block;
+                width:436px;
+                margin-right:42px;
+                padding-left:26px;
+                margin-top:auto;
+                margin-bottom:auto;
+                justify-content: center;
+                align-items: center;
+                }
+
+            .text-box1 p{
+                font-size: 16px;
+                margin-top:auto;
+                margin-bottom:auto;
+                line-height:1.5;
+                text-align: justify;
+                width:436px;
+                }
+
+            .text-box1 a{
+                display: inline-block;
+                margin-top:64px;
+                margin-right:16px;
+                padding: 10px 20px;
+                border-radius: 6px;
+                background-color:white;
+                border: solid 3px var(--main-color);
+                color:var(--main-color);
+                font-size: 16px;
+                text-decoration:none;
+                }   
+
+            .text-box1 a:hover{
+                box-shadow:0 0 0 1px #888;
+                }
+
+            .text-box1 .photo{
+                display:flex;
+                height:384px;
+                width:486px;
+                background-position:center;
+                background-size:cover;
+                background-image:url(https://cdn.pixabay.com/photo/2017/02/09/13/39/consent-2052051_1280.jpg);
+                }
+
+            .contact .container{
+                display:flex;
+                width:1200px;
+                margin-top:88px;
+                justify-content: space-between;
+                }
+
+            .contact .text{
+                display:inline-block;
+                width:387px;
+                height:160px;
+                border-radius:30px;
+                border: solid 1px var(--text-bk-color);
+                text-align:center;
+                justify-content: space-between;
+                align-items: center;
+                }
+
+            .contact h2{
+                display:inline-block;
+                margin-top:32px;
+                font-size:20px;
+                font-weight:medium;
+                }
+
+            .contact i{
+                display:inline-block;
+                width:387px;
+                margin-top:32px;
+                font-size:27px;
+                }
+            
+            .contact a{
+                text-decoration: none;
+                color:var(--text-bk-color);
+                }
+
+            .goodbye p{
+                text-align:center;
+                margin-top: 88px;
+                margin-bottom:128px;
+                margin-right:auto;
+                margin-left:auto;
+                color:var(--text-bk-color);
+                font-size: 20px;
+                font-weight: medium;
+                }
+        </style>
+    </head>
+    
+     <body>
+        <header>
+            <a href="index.html"><img src="https://pbs.twimg.com/media/FjR9dd4VQAEZ0Oo?format=png&name=medium" alt="" height="36px"></a>
+    
+            <ul class="list-menu">
+               <li><a href="Profile.html">Profile</a></li>
+                <li><a href="Portfolio.html">Portfolio</a></li>
+                <li><a href="Commission.html">Commission</a></li>
+            </ul>
+        
+            <ul class="list-btn">
+                <li><a href="#">LAN</a></li>
+                <li><a href="#">Log In</a></li>
+            </ul>
+        </header>
+
+        <div class="text-box1">
+            <div class="container">
+                <div class="photo"></div>
+                <div class="text1">
+                    <p>If you like my design, you can apply for a commission here. There are various formats from YouTube banners to poster designs. Go to the contact page and check how to apply. I'm looking forward to hearing from you.
+                    </p>
+                    <a href="#"><i class="fa-duotone fa-down-to-bracket"></i>Application Form Download</a>
+                </div>
+            </div>
+        </div>
+        <section class="contact">
+            <div class="container">
+                <div class="text">
+                    <a href="#">
+                    <i class="fa-brands fa-instagram" title="instagram"></i>
+                    <h2>@kunakuna2502</h2>
+                    </a>
+                </div>
+            
+                <div class="text">
+                    <a href="#">
+                    <i class="fa-regular fa-envelope" title="mail"></i>
+                    <h2>pyi0413@naver.com</h2>
+                </a>
+                </div>
+
+                <div class="text">
+                    <a href="#">
+                    <i class="fa-solid fa-comment" title="kakao"></i>
+                    <h2>OpenChat KUNA</h2>
+                </a>
+                </div>
+            </div>
+        </section>
+        <div class="goodbye"><p>If you have any questions, feel free to contact me.</p></div>
+
+        <footer>
+            <div class="container">
+                <a href="#"><img src="https://pbs.twimg.com/media/FjR9dd9VEAAWmRc?format=png&name=medium" alt="" height="38px"></a>
+                <nav class="contact_menu">
+                    <ul>
+                        <li><a href="#"><i class="fa-brands fa-instagram" title="instagram"></i></a></li>
+                        <li><a href="#"><i class="fa-regular fa-envelope" title="mail"></i></a></li>
+                        <li><a href="#"><i class="fa-solid fa-comment" title="kakao"></i></a></li>
+                    </ul>
+                </nav>
+                <div class="copy">
+                    ⓒ PYI corp. All rights reserved.
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

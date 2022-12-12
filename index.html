@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"/>
+
+	    <meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Final_index</title>
+	    <style>
+
+            :root{
+                --main-color:#325499;
+                --accent-color:#FFE248;
+                --bright-main-color:#C9DDFF;
+                --brignt-accent-color:#FEF5D9;
+                --text-bright-color:#A0A199;
+                --text-ld-color:#34343D;
+                --text-bk-color:#000002;
+                --large-width:1000px;
+                }
+                
+            *{
+			    padding: 0;
+			    margin: 0;
+                font-family: 'Noto Sans KR', sans-serif;
+		        }
+
+            header{
+                width: 1200px;
+                height:72px;
+                margin-left:auto;
+                margin-right:auto;
+                background-color: rgba(255,255,255);
+			    justify-content: space-between;
+			    align-items: center;
+                display:flex;
+                }
+
+            .container{
+                width:1200px;
+                margin-right:auto;
+                margin-left:auto;
+            }
+
+            a{
+			    text-decoration: none;
+			    font-size: 20px;
+			    font-weight: regular;
+		        }
+
+            header img{
+                margin-top:auto;
+                margin-bottom:auto;
+            }
+
+		    header li{
+			    list-style: none;
+		        }
+
+            header .list-menu{
+			    display: flex;
+			    justify-content: space-between;
+			    align-items: center;
+		        }
+
+            header .list-menu li a{
+                color: var(--text-ld-color);
+			    margin: 32px;
+		        }
+
+            header .list-menu li a:hover{
+                color:var(--accent-color);
+                }
+
+            header .list-btn{
+			    display: flex;
+			    justify-content: space-between;
+			    align-items: center;
+		        }
+
+            header .list-btn li a{
+                color:var(--text-bright-color);
+			    margin: 20px;
+		        }
+
+            header .list-btn li a:hover{
+                color:var(--accent-color);
+		        }
+
+            footer{
+                margin-top:64px;
+                display:flex;
+                background-color: var(--main-color);
+                color:var(--accent-color);
+                }
+
+            footer .container{
+                padding:32px 32px;
+                text-align: center;
+                justify-content: center;
+                align-items: center;
+                }
+
+            footer .contact_menu ul{
+                display:flex;
+                text-align: center;
+                justify-content: center;
+                align-items: center;
+                margin-top:12px;
+                }
+
+            footer .contact_menu li{
+                list-style:none;
+                margin:0;
+                padding:0;
+                text-align: center;
+                justify-content: center;
+                align-items: center;
+                }
+
+            footer .contact_menu a{
+                display:block;
+                font-size:27px;
+                margin-right:16px;
+                margin-left:16px;
+                text-decoration:none;
+                color:var(--accent-color);
+                }
+
+            .copy{
+            margin-top:12px;
+            font-size: 12px;
+            text-align: center;
+            font-family: 'Monserrat',sans-serif;
+                }
+
+            .section [id*="slide"] {display:none;}
+	
+	        .section .slidewrap {max-width:100%;margin:0 auto;overflow:hidden;position:relative;}
+	        .section .slidelist {white-space:nowrap;font-size:0;}
+	        .section .slidelist > li {display:inline-block;vertical-align:middle;justify-content:center;width:100%;height:515px;transition:all .5s;}
+	        .section .slidelist > li > a {display:block;position:relative;}
+
+	        .section .slide-control {position:absolute;top:0;left:0;z-index:10;width:100%;height:100%;}
+	        .section .slide-control label {position:absolute;z-index:1;top:50%;transform:translateY(-50%);padding:50px;cursor:pointer;}
+	        .section .slide-control .left {left:30px;background:url('https://i.ibb.co/zVbNmyF/left.png') center center / 100% no-repeat;}
+	        .section .slide-control .right {right:30px;background:url('https://i.ibb.co/1RKGLKN/right.png') center center / 100% no-repeat;}
+	        .section .slide-control [class*="control"] {display:none;}
+
+	        .section [id="slide01"]:checked ~ .slidewrap .slidelist > li {transform:translateX(0%);}
+	        .section [id="slide02"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-100%);}
+	        .section [id="slide03"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-200%);}
+	
+	        .section [id="slide01"]:checked ~ .slidewrap .control01 {display:block;}
+	        .section [id="slide02"]:checked ~ .slidewrap .control02 {display:block;}
+	        .section [id="slide03"]:checked ~ .slidewrap .control03 {display:block;}
+
+            .text-box1{
+                background-color:white;
+                color:var(--text-ld-color);
+                width:100%;
+            }
+
+            .text-box2{
+                background-color:var(--brignt-accent-color);
+                color:var(--text-ld-color);
+                width:100%;
+            }
+
+            .text-box1 .container{
+                display:flex;
+                margin-right:auto;
+                margin-left:auto;
+                width:996px;
+                height:427px;
+            }
+
+            .text-box2 .container{
+                display:flex;
+                margin-right:auto;
+                margin-left:auto;
+                width:996px;
+                height:427px;
+            }
+
+            .text-box1 .text1{
+                display:flex;
+                width:436px;
+                height:383px;
+                margin-left:42px;
+                padding-right:26px; 
+                margin-top:24px;
+                margin-bottom:24px;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .text-box2 .text2{
+                display:flex;
+                width:436px;
+                height:383px;
+                margin-right:42px;
+                padding-left:26px;
+                margin-top:24px;
+                margin-bottom:24px;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .text-box1 p{
+                font-size: 16px;
+                margin-top:auto;
+                margin-bottom:auto;
+                line-height:1.5;
+            }
+
+            .text-box2 p{
+                font-size: 16px;
+                margin-top:auto;
+                margin-bottom:auto;
+                line-height:1.5;
+            }
+
+            .text-box1 .photo1{
+                display:flex;
+                margin-top:24px;
+                margin-bottom:24px;
+                height:383px;
+                width:488px;
+                background-position:center;
+                background-size:cover;
+                background-image:url(https://cdn.pixabay.com/photo/2015/07/17/22/43/student-849822_1280.jpg);
+            }
+
+            .text-box2 .photo2{
+                display:flex;
+                margin-top:24px;
+                margin-bottom:24px;
+                height:383px;
+                width:488px;
+                background-position:center;
+                background-size:cover;
+                background-image:url(https://i.ibb.co/s1jMf9S/220630-No-Rules-1.png);
+            }
+
+            .text-box1 .photo3{
+                display:flex;
+                margin-top:24px;
+                margin-bottom:24px;
+                height:383px;
+                width:488px;
+                background-position:center;
+                background-size:cover;
+                background-image:url(https://cdn.pixabay.com/photo/2017/02/09/13/39/consent-2052051_1280.jpg);
+            }
+
+            </style>
+    </head>
+    <body>
+        <header>
+            <a href="index.html"><img src="https://pbs.twimg.com/media/FjR9dd4VQAEZ0Oo?format=png&name=medium" alt="" height="36px"></a>
+            <ul class="list-menu">
+                <li><a href="Profile.html">Profile</a></li>
+                <li><a href="Portfolio.html">Portfolio</a></li>
+                <li><a href="Commission.html">Commission</a></li>
+            </ul>
+            <ul class="list-btn">
+                <li><a href="#">LAN</a></li>
+                <li><a href="#">Log In</a></li>
+            </ul>
+        </header>
+
+        <div class="section">
+            <input type="radio" name="slide" id="slide01" checked>
+            <input type="radio" name="slide" id="slide02">
+            <input type="radio" name="slide" id="slide03">
+            <div class="slidewrap">
+                <ul class="slidelist">
+                    <li>
+                        <a href="Portfolio.html">
+                            <img src="https://i.ibb.co/MPtHcFJ/banner1.png" width="100%">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="Profile.html">
+                            <img src="https://i.ibb.co/rHLx9XQ/banner2.png" width="100%">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="Commission.html">
+                            <img src="https://i.ibb.co/SfnJgyC/banner3.png" width="100%">
+                        </a>
+                    </li>
+                </ul>
+        
+                <div class="slide-control">
+                    <div class="control01">
+                        <label for="slide03" class="left"></label>
+                        <label for="slide02" class="right"></label>
+                    </div>
+                    <div class="control02">
+                        <label for="slide01" class="left"></label>
+                        <label for="slide03" class="right"></label>
+                    </div>
+                    <div class="control03">
+                        <label for="slide02" class="left"></label>
+                        <label for="slide01" class="right"></label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-box1">
+            <div class="container">
+                <div class="photo1"></div>
+                <div class="text1"><p>I'm still a beginner designer. But I have pride in my design. And I recorded them on this website. This is the same place as my diary. Feel free to appreciate my work.
+                </p></div>
+            </div>
+        </div>
+        <div class="text-box2">
+            <div class="container">
+                <div class="text2"><p>I pursue a design that is easy to see. A comfortable and fun design that anyone can see is the ultimate design that I pursue. Please join us on our journey towards my goal.
+                </p></div>
+                <div class="photo2"></div>
+            </div>
+        </div>
+        <div class="text-box1">
+            <div class="container">
+                <div class="photo3"></div>
+                <div class="text1"><p>If you like my design, you can apply for a commission here. There are various formats from YouTube banners to poster designs. Go to the contact page and check how to apply. I'm looking forward to hearing from you.
+                </p></div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="container">
+                <a href="#"><img src="https://pbs.twimg.com/media/FjR9dd9VEAAWmRc?format=png&name=medium" alt="" height="38px"></a>
+                <nav class="contact_menu">
+                    <ul>
+                        <li><a href="#"><i class="fa-brands fa-instagram" title="instagram"></i></a></li>
+                        <li><a href="#"><i class="fa-regular fa-envelope" title="mail"></i></a></li>
+                        <li><a href="#"><i class="fa-solid fa-comment" title="kakao"></i></a></li>
+                    </ul>
+                </nav>
+                <div class="copy">
+                    ⓒ PYI corp. All rights reserved.
+                </div>
+            </div>
+        </footer>
+
+    </body>
+    </html>

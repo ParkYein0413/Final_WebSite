@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"/>
+
+	    <meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Final_Portfolio</title>
+        <style>
+            :root{
+                --main-color:#325499;
+                --accent-color:#FFE248;
+                --bright-main-color:#C9DDFF;
+                --brignt-accent-color:#FEF5D9;
+                --text-bright-color:#A0A199;
+                --text-ld-color:#34343D;
+                --text-bk-color:#000002;
+                --large-width:1000px;
+                }
+                
+            *{
+			    padding: 0;
+			    margin: 0;
+                font-family: 'Noto Sans KR', sans-serif;
+		        }
+
+            header{
+                width: 1200px;
+                height:72px;
+                margin-left:auto;
+                margin-right:auto;
+                background-color: rgba(255,255,255);
+			    justify-content: space-between;
+			    align-items: center;
+                display:flex;
+                }
+
+            .container{
+                width:1200px;
+                margin-right:auto;
+                margin-left:auto;
+            }
+
+            a{
+			    text-decoration: none;
+			    font-size: 20px;
+			    font-weight: regular;
+		        }
+
+            header img{
+                margin-top:auto;
+                margin-bottom:auto;
+            }
+
+		    header li{
+			    list-style: none;
+		        }
+
+            header .list-menu{
+			    display: flex;
+			    justify-content: space-between;
+			    align-items: center;
+		        }
+
+            header .list-menu li a{
+                color: var(--text-ld-color);
+			    margin: 32px;
+		        }
+
+            header .list-menu li a:hover{
+                color:var(--accent-color);
+                }
+
+            header .list-btn{
+			    display: flex;
+			    justify-content: space-between;
+			    align-items: center;
+		        }
+
+            header .list-btn li a{
+                color:var(--text-bright-color);
+			    margin: 20px;
+		        }
+
+            header .list-btn li a:hover{
+                color:var(--accent-color);
+		        }
+
+
+            footer{
+                display:flex;
+                margin-top:172px;
+                background-color: var(--main-color);
+                color:var(--accent-color);
+                }
+
+            footer .container{
+                padding:32px 32px;
+                text-align: center;
+                justify-content: center;
+                align-items: center;
+                }
+
+            footer .contact_menu ul{
+                display:flex;
+                text-align: center;
+                justify-content: center;
+                align-items: center;
+                margin-top:12px;
+            }
+
+            footer .contact_menu li{
+                list-style:none;
+                margin:0;
+                padding:0;
+                text-align: center;
+                justify-content: center;
+                align-items: center;
+            }
+
+            footer .contact_menu a{
+                display:block;
+                font-size:27px;
+                margin-right:16px;
+                margin-left:16px;
+                text-decoration:none;
+                color:var(--accent-color);
+            }
+
+        .copy{
+            margin-top:12px;
+            font-size: 12px;
+            text-align: center;
+            font-family: 'Monserrat',sans-serif;
+            }
+
+
+        .best_portfolio_poster{
+            display: inline-block;
+            width: 100%;
+            height: 764px;
+            margin-right:auto;
+            margin-left:auto;
+            background-color: var(--brignt-accent-color);
+            }
+
+        .best_portfolio{
+            display: inline-block;
+            width: 100%;
+            height: 387px;
+            margin-right:auto;
+            margin-left:auto;
+            margin-bottom:20px;
+            background-color: white;
+            }
+
+        .portfolio_list_poster{
+            width:1136px;
+            margin-right:auto;
+            margin-left:auto;
+            display: flex;
+            justify-content: space-between;
+            text-align: center;
+            }
+
+        .portfolio_list{
+            width:1200px;
+            margin-right:auto;
+            margin-left:auto;
+            display: flex;
+            justify-content: space-between;
+            text-align: center;
+            }
+
+        h1{
+            margin-top:128px;
+            margin-bottom:48px;
+            text-align: center;
+            font-size: 32px;
+            font-weight:bold;
+            color: var(--text-bk-color);
+            }  
+
+
+        .poster p{
+            font-size: 24px;
+            color: var(--text-bk-color);
+            margin: 32px 0 0 0 ;
+            }
+
+        .circle{
+            width: 323px;
+            height: 414px;
+            position: relative;
+            }
+
+        .circle a{
+            text-decoration: none;
+            }
+
+        .poster_image{
+            width: 323px;
+            height: 414px;
+            overflow: hidden;
+            }
+
+        .circle img{
+            width: 323px;
+            transition: 0.2s ease-in;
+            overflow: hidden;
+            }
+
+        .circle:hover img{
+            transform: scale(1.1);
+            transition: 0.2s ease-in;
+            }
+
+        .rect{
+            width: 386px;
+            height: 386px;
+            position: relative;
+            }
+
+        .rect a{
+            text-decoration: none;
+            }
+
+        .cover_image{
+            width: 387px;
+            height: 387px;
+            overflow: hidden;
+            }
+
+        .rect img{
+            width: 386px;
+            transition: 0.2s ease-in;
+            overflow: hidden;
+            }
+
+        .rect:hover img{
+            transform: scale(1.1);
+            transition: 0.2s ease-in;
+            }
+        </style>
+    </head>
+
+
+    <body>
+        <header>
+            <a href="index.html"><img src="https://pbs.twimg.com/media/FjR9dd4VQAEZ0Oo?format=png&name=medium" alt="" height="36px"></a>
+    
+            <ul class="list-menu">
+               <li><a href="Profile.html">Profile</a></li>
+                <li><a href="Portfolio.html">Portfolio</a></li>
+                <li><a href="Commission.html">Commission</a></li>
+            </ul>
+        
+            <ul class="list-btn">
+                <li><a href="#">LAN</a></li>
+                <li><a href="#">Log In</a></li>
+            </ul>
+        </header>
+
+        <section class="best_portfolio_poster">
+            <h1>Poster</h1>
+            <div class="portfolio_list_poster">
+                <div class="poster">
+                    <div class="circle c1"> 
+                        <div class="poster_image">
+                            <a href="Poster_DesignWorld.html"><img src="https://i.ibb.co/9V8ddmn/image.jpg" alt="Design_World"></a>
+                        </div>
+                    </div>
+                    <p>Design World</p>
+                </div>
+                  
+                <div class="poster">
+                    <div class="circle c2">
+                        <div class="poster_image">
+                            <a href="Poster_ONF5th.html"><img src="https://i.ibb.co/PC7JFvq/poster3.png" alt="ONF_5th_Anni"></a>
+                        </div>
+                    </div>
+                    <p>ONF 5th Anni.</p>
+                </div>
+
+                <div class="poster">
+                    <div class="circle c3">
+                        <div class="poster_image">
+                            <a href="Poster_TrafficJam.html"><img src="https://i.ibb.co/kxKP05w/poster2.png" alt="Traffic_Jam"></a>
+                        </div>
+                    </div>
+                    <p>Traffic Jam</p>
+                </div>
+            </div>
+        </section>
+
+        <h1>Cover Design</h1>
+        <section class="best_portfolio">
+            <div class="portfolio_list">
+                <div class="poster">
+                    <div class="rect r1"> 
+                        <div class="cover_image">
+                            <a href="Cover_DiveintoYou.html"><img src="https://i.ibb.co/2c4Cbty/220723-Dive-Into-You-1.png" alt="Dive into You"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="poster">
+                    <div class="rect r2">
+                        <div class="cover_image">
+                            <a href="Cover_Ifwe.html"><img src="https://i.ibb.co/X5HFk6b/220630-If-We-Never-Met-1.png" alt="If we never met"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="poster">
+                    <div class="rect r3">
+                        <div class="cover_image">
+                            <a href="Cover_Cactus.html"><img src="https://i.ibb.co/tprCqRh/image.png" alt="내 안의 사랑이 증발한다면"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="best_portfolio">
+            <div class="portfolio_list">
+                <div class="poster">
+                    <div class="rect r1"> 
+                        <div class="cover_image">
+                            <a href="Cover_SkyGirl.html"><img src="https://i.ibb.co/ph6hbtk/220714-Sky-Girl-3.png" alt="천공녀"></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="poster">
+                    <div class="rect r2">
+                        <div class="cover_image">
+                            <a href="Cover_DumbDumb.html"><img src="https://i.ibb.co/mXrWWbt/220718-Dumb-Dumb-1.png" alt="Dumb Dumb"></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="poster">
+                    <div class="rect r3">
+                        <div class="cover_image">
+                            <a href="Cover_lovelovelove.html"><img src="https://i.ibb.co/x7fxywS/lovelovelove.png" alt="love, love love?"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="best_portfolio">
+            <div class="portfolio_list">
+                <div class="poster">
+                    <div class="rect r1"> 
+                        <div class="cover_image">
+                            <a href="Cover_CherryBomb.html"><img src="https://i.ibb.co/KWbMMhV/220720-Cherry-Bomb-2.png" alt="Cherry Bomb"></a>
+                        </div>
+                    </div>
+                </div>
+                  
+                <div class="poster">
+                    <div class="rect r2">
+                        <div class="cover_image">
+                            <a href="Cover_DreamGirl.html"><img src="https://i.ibb.co/QYYKNW6/220630-Dream-Girl-1.png" alt="Dream Girl"></a>
+                        </div>
+                    </div>
+                </div>
+                  
+                <div class="poster">
+                    <div class="rect r3">
+                        <div class="cover_image">
+                            <a href="Cover_Runaway.html"><img src="https://i.ibb.co/QPnFMsF/220817-Runaway-1.png" alt="Runaway"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="container">
+                <a href="#"><img src="https://pbs.twimg.com/media/FjR9dd9VEAAWmRc?format=png&name=medium" alt="" height="38px"></a>
+                <nav class="contact_menu">
+                    <ul>
+                        <li><a href="#"><i class="fa-brands fa-instagram" title="instagram"></i></a></li>
+                        <li><a href="#"><i class="fa-regular fa-envelope" title="mail"></i></a></li>
+                        <li><a href="#"><i class="fa-solid fa-comment" title="kakao"></i></a></li>
+                    </ul>
+                </nav>
+                <div class="copy">
+                    ⓒ PYI corp. All rights reserved.
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
